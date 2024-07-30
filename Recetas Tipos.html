@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles y Más</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Blueberry', sans-serif;
+            background-image: url('https://www.shutterstock.com/shutterstock/photos/1903182979/display_1500/stock-vector-abstract-color-vector-banner-blurred-light-fresh-gradient-background-pastel-pink-blue-lilac-1903182979.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #ffabc6;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffabc6;
+            padding: 15px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Blueberry';
+            src: url('ruta/a/blueberry.ttf') format('truetype'); /* Reemplaza 'ruta/a/blueberry.ttf' con la ruta correcta a tu archivo de fuente .ttf */
+            font-size: 80px; /* Tamaño de la fuente */
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .search {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 40px;
+        }
+
+        .search input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #555;
+            margin-right: 10px;
+        }
+
+        .search button {
+            padding: 8px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: pink;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #ffabc6;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .redes-sociales a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            text-decoration: underline;
+        }
+
+        .logo-title {
+            font-family: 'ARIAL BLACK', sans-serif;
+            font-size: 40px;
+            color: white;
+            margin-left: 20px;
+        }
+
+        .small-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .classification {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .centered img {
+            width: 300px;
+            height: auto;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #186A3B;
+            color: white;
+            cursor: pointer;
+        }
+
+        .additional-content {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .additional-content p {
+            margin-bottom: 10px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <h1 class="logo-title">Gisselly Cake</h1>
+        <nav>
+            <ul>
+                          <li><a href="Pasteleria%20y%20Más.html">Inicio</a></li>
+    <li><a href="Mi%20Historia.html">Mi historia</a></li>
+      <li><a href="">Tipos de Recetas </a></li>
+        <li><a href="Tutoriales.html">Tutoriales</a></li>
+         <li><a href="file:///C:/Users/sherly/Documents/Index3/Galeria.html">Galeria</a></li>
+            
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Busca una receta...">
+            <button type="submit">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="classification">
+            <center>
+                <h1>Recetas</h1>
+            </center>
+            <h2>Suabes a tu paladar</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+               
+                    <img class="small-image" src="https://www.verybestbaking.com/sites/g/files/jgfbjl326/files/styles/large/public/thumbnail/101722-2020_06_03T13_18_18_mrs_ImageRecipes_28445lrg.jpg?itok=ULeGRXQk" alt="Receta 1" onclick="showRecipe('receta1')">
+                    <p>Pudin de pan con pasas</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://i.makeagif.com/media/1-29-2017/t71yJ_.gif" alt="Receta 2" onclick="showRecipe('receta2')">
+                    <p>Flan con caramelo</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://i.pinimg.com/236x/bc/16/14/bc1614ee6754d1318e26f99adc4afa53.jpg" alt="Receta 3" onclick="showRecipe('receta3')">
+                    <p>Gelatina de fresa y Piña</p>
+                </div>
+            </div>
+        </section>
+        <section class="classification">
+            <h2>Cheescakes</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img class="small-image" src="https://es.cravingsjournal.com/wp-content/uploads/2023/07/cheesecake-de-limon-y-arandanos-1.jpg" alt="Receta 4" onclick="showRecipe('receta4')">
+                    <p>Cheescake de Arandanos</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/b9e5673058f8bcc1d7853f5b20110db5.png" alt="Receta 5" onclick="showRecipe('receta5')">
+                    <p>Cheescake de Maracuyá</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://media.tenor.com/qWJoKzbe5qEAAAAM/cheesecake-yummy.gif" alt="Receta 6" onclick="showRecipe('receta6')">
+                    <p>Cheescake de Strawberry</p>
+                </div>
+            </div>
+        </section>
+         <section class="classification">
+            <h2>Pasteles y Tortas</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img class="small-image" src="https://aprende.guatemala.com/wp-content/uploads/2017/07/giphy-28.gif" alt="Receta 7" onclick="showRecipe('receta7')">
+                    <p>Pastel de Tres Leches</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://i.pinimg.com/originals/49/d1/4c/49d14ccebdc44553d382ad394eeefaee.gif" alt="Receta 8" onclick="showRecipe('receta8')">
+                    <p>Pastel de Chocolate</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="small-image" src="https://64.media.tumblr.com/0316fd3f459e6b4835082660c207f487/205b2d4ba9717a9f-90/s400x600/5b85ea2cfa3c795f2c9be5e86bf1c70a1eaa1152.gif" alt="Receta 9" onclick="showRecipe('receta9')">
+                    <p>Torta Red Velvet</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipe-details" class="hidden centered">
+            <img id="recipe-image" src="" alt="Imagen de la receta">
+            <h2 id="recipe-title"></h2>
+            <p id="recipe-text"></p>
+            <div class="additional-content">
+                <h3>Ingredientes:</h3>
+                <ul id="recipe-ingredients"></ul>
+                <h3>Instrucciones:</h3>
+                <ul id="recipe-instructions"></ul>
+            </div>
+            <button class="back-button" onclick="goBack()">Volver a las Recetas</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Pasteles y Más</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+    const recipes = {
+        receta1: {
+            title: 'Pudin de pan con pasas',
+            text: 'Esta es una receta de Pudin de pan con pasas .',
+            ingredients: ['1 Blosa de Pan Molde O del que tu prefieras', '1 litro de leche Entera', '1 Barrita de margarina', 'Canela en polovo a tu gusto', 'Pasas', '1 lata de leche condensada'],
+            image: 'https://www.verybestbaking.com/sites/g/files/jgfbjl326/files/styles/large/public/thumbnail/101722-2020_06_03T13_18_18_mrs_ImageRecipes_28445lrg.jpg?itok=ULeGRXQk',
+            instructions: [
+                'Precalentar el horno a 180°C (350°F).',
+                'Añadir el pan, la margarina ya derretida y la leche.',
+                'Añadir la canela y la Vainilla e integrar todo muy bien.',
+                'Incorporar las pasas una ves que ya este la mescla en el molde',
+                'Cuando este cocido agregar la leche condensada sobre nuestro pudin e ingresar otro tiempo al horno hasta que la leche se caramelice.',
+                'Dejar enfriar en la nevera antes de servir.'
+            ]
+        },
+        receta2: {
+            title: 'Flan con Caramelo',
+            text: 'Esta es una receta deFlan con Caramelo. Muy delicioso.',
+            ingredients: ['1 litro de leche entera', '8 Huevos', '250 Gramos de Azúcar', '1 Cucharadita de vainilla','175 gramos de azúcar para el caramelo', '60 ml de Agua'],
+            image: 'https://i.makeagif.com/media/1-29-2017/t71yJ_.gif',
+            instructions: [
+                'Precalentar el horno a 180°C (350°F).',
+                'Añadir el azucara para preparar el caramelo y añadirlo al molde.',
+                'Añadir los huevos, la leche y la vainilla.',
+                'Incorporar todos los ingredientes muy bien, Lugo añadir la mezcla al molde ya con el caramelo y ponerlo dentro de otra vandeja con agua para cocerlo a baño maria .',
+                'Introducirlo al horno durante 60 minutos o hasta que esté Cocido.',
+                'Dejar enfriar antes de servir.'
+            ]
+        },
+        receta3: {
+            title: 'Gelatina de Fresa y Piña',
+            text: 'Esta es una receta de Gelatina de Fresa y Piña . Deliciosa y cremosa.',
+            ingredients: ['2 Taza de agua bien caliente','1 Gelatina sabor fresa de 120 g', '1 Gelatina sabor piña', '500 g de Crema ácida para la gelatina de fresa', '500 g de Crema ácida para la gelatina de Piña'],
+            image: 'https://i.pinimg.com/236x/bc/16/14/bc1614ee6754d1318e26f99adc4afa53.jpg',
+            instructions: [
+                'En 1 taza de agua caliente añadir la gelatina de fresa.',
+                'En la licuadora añadir 500g de crema ácida y añadir la gelatina de fresa y licuar .',
+                'Añadir al molde hasta la mitad y refrigerar por 30 minutos hasta que semicuaje.',
+                'En la otra Taza de agua caliente añadir la gelatina de piña.',
+                'En la licuadora añadir los otros 500g de crema ácida y añadir la gelatina de piña y licuar .',
+                'Sacar la gelatina de freasa para incorporar sobre ella la preparación de la gelatina de piña.',
+                'Llevar al refrigerador por 2 horas.',
+                'Servir la cantidad que gustes.'
+            ]
+        },
+        receta4: {
+            title: 'Cheescake de Arandanos',
+            text: 'Delicioso Cheescake de Arandanos',
+            ingredients: ['1 Taza y medi de galletas de vainilla', '1 Barra de mantequilla', '24 Onzas de queso crema', '1 Lata de media crema', '1 Lata de media Leche condensada', 'Relleno de arandanos', '3 Sobres de grenetina o gelatina sin sabor'],
+            image: 'https://es.cravingsjournal.com/wp-content/uploads/2023/07/cheesecake-de-limon-y-arandanos-1.jpg',
+            instructions: [
+                'En el molde añadir las galletas trituradas y la mantequilla derretida y hacer la base.',
+                'Añadir el queso crema, la media crema, la leche condensada y relleno de arandanos.',
+                'En 1/4 de agua caliente agregar los 3 sobres de grenetina.',
+                'Añadir la mezcla al molde dejarlo refrigerar por toda una noche.',
+                'Decorar con relleno de arandanos y servir a tu gusto.'
+            ]
+        },
+        receta5: {
+            title: 'Cheescake de Maracuyá',
+            text: 'Delicioso Cheescake de Maracuyá .',
+            ingredients: ['220g de Galletas de vainilla', '1 Barra de manteqilla', '150 ml de Agua', '500 ml de Crema de Leche', '681g de Queso Crema', '600g de Leche Condensada', '280g de pulpa de maracuyá para la cobertura', '135g de Azúcar blanca', '1 Cucharada de Maicena', '1 Cucharada de Agua'],
+            image: 'https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/b9e5673058f8bcc1d7853f5b20110db5.png',
+            instructions: [
+                'En el molde preparar la base con las galletas trituradas y la mantequilla ya derretida.',
+                'Mezclar en una licuadora el queso crema, la leche condensada, la crema de leche, el agua.',
+                'Añadirlo al molde y refrigerarlo.',
+                'Para la cobertura añadir la pulpa de maracuya, la azúcar blanca, la maicena y el agua, dejar hervir y luego enfriar para decorar nuestro cheescake.',
+                'Una vez fria nuestra mezcla de maracuyá, añadirla a nuestro cheescake',
+                'Servir a nuestro gusto.'
+            ]
+        },
+        receta6: {
+            title: 'Cheescake de Strawberry',
+            text: 'Delicioso Cheescake de Strawberry',
+            ingredients: ['250g de Galletas de vainilla', '140g de mantequilla', '350g de Queso Crema', '200ml de crema para batir', '400g de Fresas', '1 Lata de leche condensada', '20g de gelatina sin sabor'],
+            image: 'https://media.tenor.com/qWJoKzbe5qEAAAAM/cheesecake-yummy.gif',
+            instructions: [
+                'En el molde preparar la base con las galletas trituradas y la mantequilla ya derretida.',
+                'Mezclar en la icuadora el queso crema,la crema para batir,la leche condensada y las fresas.',
+                'Poner a Hidratar nuestra gelatina en 6 cucharadas de agua.',
+                'Una vez hidratada nuestra gelatina incorporarla a nuestra mezcla de Cheescake.',
+                'Verter la mezcla al molde y dejarlo en el refrigerador por toda una noche.',
+                'Decorar con fresas y jalea de fresa y luego servir a tu gusto.'
+            ]
+        },
+        receta7: {
+            title: 'Pastel de Tres Leches',
+            text: 'Delicioso Pastel de Tres Leches',
+            ingredients: ['4 Huevos', '90g de Arina todo uso', '1/2 cucharada de polvo para hornear', '1 taza de leche entera', '1/2 taza de leche evaporada', '1/2 taza de leche condensada', '1/2 taza de leche entera'],
+            image: 'https://aprende.guatemala.com/wp-content/uploads/2017/07/giphy-28.gif',
+            instructions: [
+                'Precalentar el horno a 180°C (350°F).',
+                'Batir los huevos hasta duplicar el volumen.',
+                'Incorporar la arina, el polvo de hornear y la taza de leche e integrar bien.',
+                'Verter la masa en un molde para pastel engrasado y hornear durante 30-35 minutos o hasta que esté cocido.',
+                'Dejar enfriar para humeser con las tres leches.',
+                'Añadir la leche condensada, evaporada y la leche entera para crear la mezcla de tres leches.',
+                'Dejar enfriar en el refrigerador y decorar con crema batida.',
+                'Servir a tu gusto.',
+            ]
+        },
+        receta8: {
+            title: 'Pastel de Chocolate',
+            text: 'Delicioso Pastel de Chocolate',
+            ingredients: ['3 Huevos', '200g de Azúcar', '1 cucharadita de vainilla', '325 de arina', '1 cucharadita de vicarbonato', '70g de cacao amargo', '100ml de Aceite', '250ml Taza de Leche'],
+            image: 'https://i.pinimg.com/originals/49/d1/4c/49d14ccebdc44553d382ad394eeefaee.gif',
+            instructions: [
+                'Precalentar el horno a 180°C (350°F).',
+                'Mezclar los huevos, el azúcar, la vainilla,la arina, el vicarbonato, el cacao, el aciete y la leche.',
+                'Añadir la mezcla a un molde y meter al horno por unos 35-40 minutos.',
+                'Decoarar a tu gusto.',
+                'Servir a tu preferencia.'
+            ]
+        },
+        receta9: {
+            title: 'Torta Red Velvet',
+            text: 'Deliciosa Torta Red Velvet.',
+            ingredients: ['1/2 taza de mantequilla', '1 1/2 de Azúcar', '2 Huevos', '1 Cucharadita de vainilla', '1 1/2 taza de harina', '1 cucharadita de vicarbonato', '1 Cucharadita de sal', '2 Cucharadas de cocoa', '1 Taza de leche', '1 Cucharada de Vinagre', 'Colorate rojo al gusto'],
+            image: 'https://64.media.tumblr.com/0316fd3f459e6b4835082660c207f487/205b2d4ba9717a9f-90/s400x600/5b85ea2cfa3c795f2c9be5e86bf1c70a1eaa1152.gif',
+            instructions: [
+                'Precalentar el horno a 180°C (350°F).',
+                'Añadir en recipiente los huevos, la mantequilla,la azúcar, la vainilla, la harina,el vicarbonato, la sal, la cocoa, la leche, el vinagre y el colorate.',
+                'Mezclar muy bien todos los ingredientes.',
+                'Llevar al horno por unos 35-45 minutos o hasta que este cocido.',
+                'Decorar a tu gusto.',
+                'Servirlo para disfrutar.'
+            ]
+        }
+    };
+    function showRecipe(recipeId) {
+        document.getElementById('recipe-title').textContent = recipes[recipeId].title;
+        document.getElementById('recipe-text').textContent = recipes[recipeId].text;
+        document.getElementById('recipe-image').src = recipes[recipeId].image;
+
+        const ingredientsList = document.getElementById('recipe-ingredients');
+        ingredientsList.innerHTML = '';
+        recipes[recipeId].ingredients.forEach(ingredient => {
+            const li = document.createElement('li');
+            li.textContent = ingredient;
+            ingredientsList.appendChild(li);
+        });
+
+        const instructionsList = document.getElementById('recipe-instructions');
+        instructionsList.innerHTML = '';
+        recipes[recipeId].instructions.forEach(instruction => {
+            const li = document.createElement('li');
+            li.textContent = instruction;
+            instructionsList.appendChild(li);
+        });
+
+        document.querySelectorAll('.classification').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        document.getElementById('recipe-details').classList.remove('hidden');
+    }
+
+    function goBack() {
+        document.querySelectorAll('.classification').forEach(section => {
+            section.classList.remove('hidden');
+        });
+
+        document.getElementById('recipe-details').classList.add('hidden');
+    }
+
+    </script>
+</body>
+</html>
